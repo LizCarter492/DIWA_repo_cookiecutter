@@ -4,7 +4,7 @@
   "author_name": "Your Name",
   "github_username": "your-github-name",
   "author_affiliation": "Your Institution",
-  "author_email": "your.email@example.com",
+  "email": "your.email@example.com",
   "year": "2026",
   "description": "Short project description",
   "license": [
@@ -15,16 +15,8 @@
     "CC-BY-4.0",
     "Proprietary"
   ],
-  "open_science_practices": [
-    "yes",
-    "no"
-  ],
   "_zenodo_registration_required": "IMPORTANT: You must register this repository with Zenodo (https://zenodo.org) to obtain a DOI before completing setup.",
-  "zenodo_registered": [
-    "yes",
-    "no"
-  ],
-  "zenodo_url": "",
+   "zenodo_url": "",
   "_zenodo_url_validation": "^(|https://zenodo\\.org/(record|doi)/.+)$"
   "_zenodo_url_validation": "^https://zenodo\\.org/(record|doi)/.+",
   "orcid": "0000-0000-0000-0000",
