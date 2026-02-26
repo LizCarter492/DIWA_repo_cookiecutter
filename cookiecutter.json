@@ -2,7 +2,6 @@
   "project_name": "DIWA Research Project",
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
   "author_name": "Your Name",
-  "email": "your@email.com",
   "github_username": "your-github-name",
   "author_affiliation": "Your Institution",
   "author_email": "your.email@example.com",
@@ -28,7 +27,7 @@
   "_zenodo_url_validation": "^https://zenodo\\.org/(record|doi)/.+",
   "orcid": "0000-0000-0000-0000",
   "_orcid_validation": "^\\d{4}-\\d{4}-\\d{4}-\\d{3}[\\dX]$",
-  "repository_url": "https://github.com/username/{{ cookiecutter.project_slug }}",
+  "repository_url": "repository_url": "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}",
   "version": "0.1.0",
   "_copy_without_render": [
     "*.png",
