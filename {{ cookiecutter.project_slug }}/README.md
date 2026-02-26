@@ -76,6 +76,10 @@ All repositories should be published on a platform providing persistent object i
 
 DOI: {{ cookiecutter.zenodo_url }}
 
+or
+
+[![DOI](https://zenodo.org/badge/DOI/DOI_PENDING.svg)](DOI_PENDING)
+
 ## License
 
 {{ cookiecutter.license }}
