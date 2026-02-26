@@ -1,5 +1,0 @@
-cff-version: 1.2.0
-title: "{{ cookiecutter.project_name }}"
-authors:
-  - family-names: "{{ cookiecutter.author_name }}"
-doi: DOI_PENDING
