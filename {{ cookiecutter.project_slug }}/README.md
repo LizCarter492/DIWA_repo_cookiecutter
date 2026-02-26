@@ -93,7 +93,7 @@ DOI: {{ cookiecutter.zenodo_url }}
   doi = {{DOI_PENDING}},
   url = {{{ cookiecutter.zenodo_url }}}
 }
-
+```
 or
 
 [![DOI](https://zenodo.org/badge/DOI/DOI_PENDING.svg)](DOI_PENDING)
