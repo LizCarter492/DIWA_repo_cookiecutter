@@ -27,7 +27,7 @@
   "_zenodo_url_validation": "^https://zenodo\\.org/(record|doi)/.+",
   "orcid": "0000-0000-0000-0000",
   "_orcid_validation": "^\\d{4}-\\d{4}-\\d{4}-\\d{3}[\\dX]$",
-  "repository_url": "repository_url": "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}",
+  "repository_url": "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}",
   "version": "0.1.0",
   "_copy_without_render": [
     "*.png",
