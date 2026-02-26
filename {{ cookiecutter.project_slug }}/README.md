@@ -2,8 +2,8 @@
 
 **Author:** {{ cookiecutter.author_name }}  
 **Contact:** {{ cookiecutter.email }}
-**Organization:** {{ cookiecutter.orgname }}
-**Website:** {{ cookiecutter.url }}
+**Organization:** {{ cookiecutter.author_affiliation }}
+**Website:** {{ cookiecutter.repository_url }}
 
 ## Project Overview
 {{ cookiecutter.description }}
@@ -34,7 +34,7 @@ Detail any datasets that are in your inputs data folder. Note this is only for d
 
 ## Methods Summary
 
-**Model Framework:** {{ cookiecutter.model_framework }}
+**Model Framework:** 
 Describe steps involved in data preprocessing
 
 ## Repository Structure
@@ -74,7 +74,7 @@ Display key figures in `/figures` folder, with description:
 ## Citation
 All repositories should be published on a platform providing persistent object identifiers (e.g. Zenodo).
 
-DOI: **DOI_PENDING**
+DOI: {{ cookiecutter.zenodo_url }}
 
 ## License
 
