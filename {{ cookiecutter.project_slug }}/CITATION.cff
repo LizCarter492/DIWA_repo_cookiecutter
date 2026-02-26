@@ -12,7 +12,7 @@ authors:
   - given-names: "{{ cookiecutter.author_name.split(' ')[0] }}"
     family-names: "{{ cookiecutter.author_name.split(' ')[-1] }}"
     affiliation: "{{ cookiecutter.author_affiliation }}"
-    email: "{{ cookiecutter.author_email }}"
+    email: "{{ cookiecutter.email }}"
     orcid: "https://orcid.org/{{ cookiecutter.orcid }}"
 
 {% if "zenodo.org" in cookiecutter.zenodo_url %}
