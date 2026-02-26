@@ -33,4 +33,9 @@
     "*.jpg",
     "*.svg"
   ]
+  "dockerhub_username": "",
+  "use_docker": [
+    "no",
+    "yes"
+  ]
 }
