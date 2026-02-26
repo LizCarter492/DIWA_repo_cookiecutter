@@ -1,0 +1,6 @@
+{
+  "title": "{{ cookiecutter.project_name }}",
+  "creators": [{"name": "{{ cookiecutter.author_name }}"}],
+  "description": "{{ cookiecutter.description }}",
+  "license": "{{ cookiecutter.license }}"
+}

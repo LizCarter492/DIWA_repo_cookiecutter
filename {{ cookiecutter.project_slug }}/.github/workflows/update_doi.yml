@@ -1,0 +1,21 @@
+name: Update Zenodo DOI
+on:
+  release:
+    types: [published]
+jobs:
+  update-doi:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sleep 60
+      - run: |
+          DOI=$(curl -s https://zenodo.org/api/records?q={{ cookiecutter.project_slug }} | jq -r '.hits.hits[0].doi')
+          echo "DOI=$DOI" >> $GITHUB_ENV
+      - run: |
+          sed -i "s/DOI_PENDING/$DOI/g" README.md
+          sed -i "s/DOI_PENDING/$DOI/g" CITATION.cff
+      - run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+          git commit -am "Auto-update DOI"
+          git push
