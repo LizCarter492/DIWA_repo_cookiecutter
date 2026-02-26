@@ -1,5 +1,50 @@
 cff-version: 1.2.0
+
 title: "{{ cookiecutter.project_name }}"
+
+message: >
+  If you use this software, please cite it using the metadata below.
+  A Zenodo DOI will be provided when available.
+
+type: software
+
 authors:
-  - family-names: "{{ cookiecutter.author_name }}"
-doi: DOI_PENDING
+  - given-names: "{{ cookiecutter.author_name.split(' ')[0] }}"
+    family-names: "{{ cookiecutter.author_name.split(' ')[-1] }}"
+    affiliation: "{{ cookiecutter.author_affiliation }}"
+    email: "{{ cookiecutter.author_email }}"
+    orcid: "https://orcid.org/{{ cookiecutter.orcid }}"
+
+{% if "zenodo.org" in cookiecutter.zenodo_url %}
+
+identifiers:
+  - type: doi
+    value: DOI_PENDING
+    description: Zenodo DOI (assigned after first release)
+
+{% else %}
+
+identifiers:
+  - type: url
+    value: "{{ cookiecutter.repository_url }}"
+    description: GitHub repository
+
+{% endif %}
+
+repository-code: "{{ cookiecutter.repository_url }}"
+
+url: "{{ cookiecutter.repository_url }}"
+
+abstract: >
+  {{ cookiecutter.description }}
+
+keywords:
+  - research
+  - open-science
+  - reproducibility
+
+license: "{{ cookiecutter.license }}"
+
+version: "{{ cookiecutter.version }}"
+
+date-released: "{{ cookiecutter.year }}"
