@@ -85,13 +85,13 @@ DOI: {{ cookiecutter.zenodo_url }}
 **BibTeX**
 
 ```bibtex
-@software{{ cookiecutter.project_slug }},
-  author = {{{ cookiecutter.author_name }}},
-  title = {{{ cookiecutter.project_name }}},
-  year = {{{ cookiecutter.year }}},
-  version = {{{ cookiecutter.version }}},
-  doi = {{DOI_PENDING}},
-  url = {{{ cookiecutter.zenodo_url }}}
+@software {{ cookiecutter.project_slug }},
+  author = {{ cookiecutter.author_name }},
+  title = {{ cookiecutter.project_name }},
+  year = {{ cookiecutter.year }},
+  version = {{ cookiecutter.version }},
+  doi = {{ cookiecutter.zenodo_url }},
+  url = {{ cookiecutter.repository_url }}
 }
 ```
 or
