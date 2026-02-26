@@ -72,9 +72,27 @@ Display key figures in `/figures` folder, with description:
 ![Example](figures/example.png)
 
 ## Citation
-All repositories should be published on a platform providing persistent object identifiers (e.g. Zenodo).
 
+If you use this software, please cite:
+
+**APA format**
+
+{{ cookiecutter.author_name }} ({{ cookiecutter.year }}).
+*{{ cookiecutter.project_name }}* (Version {{ cookiecutter.version }}).
+{{ cookiecutter.author_affiliation }}.
 DOI: {{ cookiecutter.zenodo_url }}
+
+**BibTeX**
+
+```bibtex
+@software{{ cookiecutter.project_slug }},
+  author = {{{ cookiecutter.author_name }}},
+  title = {{{ cookiecutter.project_name }}},
+  year = {{{ cookiecutter.year }}},
+  version = {{{ cookiecutter.version }}},
+  doi = {{DOI_PENDING}},
+  url = {{{ cookiecutter.zenodo_url }}}
+}
 
 or
 
