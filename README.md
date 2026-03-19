@@ -23,7 +23,7 @@ git clone https://github.com/LizCarter492/DIWA_repo_cookiecutter
 ```
 Install cookiecutter and check that the installation worked correctly:
 ```
-pip install cookiecutter
+pip install --user cookiecutter
 cookicutter --v
 ```
 Use the cookiecutter command to initialize the cookiecutter template as a repository:
