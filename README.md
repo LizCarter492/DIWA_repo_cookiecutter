@@ -35,16 +35,5 @@ Follow the prompts to modify the repository. Once the repository has been create
 ## Instructions to modify this tool
 Fork the https://github.com/LizCarter492/DIWA_repo_cookiecutter repository. To change any elements of the template, navigate to the {{ cookiecutter.project_slug }}. All template elements are editable in this space. Once you are satisfied with your edits, push them to your forked repository, and submit a pull request.
 
-## TO DO:
-1. Instructions to initialize Zenodo account
-2. The run_reproducibility.py should ensure end-to-end reproducibility of SE1-4, create dockerfile, and configure repo for binderhub.
-3. SE1 should train on DIWA DDAS protocols and include instuctions on use of DIWA Data Lake
-4. SE2 should include more examples of standard geospatial processing operations and introduce the concept of exploratory data analysis
-5. SE3 should introduce the DIWA model interoperability framework
-6. SE4 should include examples of interactive data visualizations (e.g. ipyleaflet, voila, dash)
-7. We should add a tool to automate authentication protocols for common APIs (if needed)
-8. Set up github actions for Docker + BinderHub 
-Contact elizabeth.carter@oulu.fi with any questions/comments/concerns.
-
 
 
