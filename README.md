@@ -12,6 +12,8 @@ This repository template utilizes a [Cookiecutter](https://www.cookiecutter.io/)
 | processed_data/ | analysis-ready datasets |
 | model_data/ | Saved model outputs, model configuration files, predictions|
 | figures/ | Figures, tables, graphs, and data-derivatives (e.g. summary statistics) displayed in manuscript text |
+| ../raw_data/ | data downloaded from stable URLs/PDIs |
+| ../processed_data/ | analysis-ready datasets |
 | run_reproducibility.py | Reproducibility wrapper |
 | Dockerfile | Reproducible container |
 | CITATION.cff | Citation metadata, sourced directly from Zenodo |
