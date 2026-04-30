@@ -1,12 +1,16 @@
+#!/srv/conda/envs/notebook/bin/python
+
 import subprocess
-from glob import glob
+from path import Path
 
-nb_list = sorted(glob("SE*.ipynb"))
+# Get all standard element files and put them in order
+se_list = sorted(Path("notebooks").glob("SE*.ipynb"))
 
-for nb in nb_list:
-    print("Running nb")
+# Run each 
+for se_path in se_list:
+    print(f"Running {se_path}")
     subprocess.run(
-        f"jupyter nbconvert --execute --to notebook --inplace notebooks/{nb}", 
+        f"jupyter nbconvert --execute --to notebook --inplace {se_path}", 
         shell=True, check=True)
 
 print("Workflow complete")
