@@ -1,3 +1,4 @@
+{% raw %}
 name: Build Notebook Container
 on: [workflow_dispatch] # Triggers manually
 jobs:
@@ -13,3 +14,4 @@ jobs:
       with:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+{% endraw %}
