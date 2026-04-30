@@ -1,3 +1,4 @@
+{% raw %}
 name: Build and Push Container
 
 on:
@@ -21,3 +22,4 @@ jobs:
           DOCKER_REGISTRY: ghcr.io
           IMAGE_NAME: ghcr.io/muhamhamza123/myproject
           ADDITIONAL_TAG: ${{ github.sha }}
+{% endraw %}
