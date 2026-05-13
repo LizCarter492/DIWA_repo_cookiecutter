@@ -1,10 +1,7 @@
 {% raw %}
-name: Build and Push Container
+name: Build and Push Container to GHCR
 
-on:
-  push:
-    branches: [main]
-  workflow_dispatch:
+on: workflow_dispatch
 
 jobs:
   build:
