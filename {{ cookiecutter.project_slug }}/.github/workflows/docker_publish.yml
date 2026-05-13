@@ -1,6 +1,9 @@
 {% raw %}
-name: Build Notebook Container
-on: [workflow_dispatch] # Triggers manually
+name: Build Push to DockerHub
+on: 
+  push:
+    branches: [main] 
+  workflow_dispatch: # Triggers manually also
 jobs:
   build:
     runs-on: ubuntu-latest
